@@ -1,3 +1,44 @@
-body {
-    margin: 0;
+.header {
+	display: flex;
+	padding: 25px 50px;
+	justify-content: space-between;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+	align-items: center;
+}
+
+.header_logo {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.header_action {
+	transition: background-image 0.5s;
+	width: 24px;
+	height: 24px;
+	background-image: url(./images/change-theme.png);
+}
+
+.header_action:hover {
+	background-image: url(./images/change-theme-our.png);
+}
+
+.header_link {
+	transition: color 0.5s;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.header_link:hover {
+	color: #80c4d3;
+}
+
+.header_link.active {
+	font-weight: 600;
+}
+
+.header_menu {
+	display: flex;
+	gap: 40px;
 }
